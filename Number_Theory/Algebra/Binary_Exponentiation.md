@@ -61,7 +61,7 @@ This means each term is a linear combination of the \( k \) previous terms.
 
 Example for Tribonacci:
 
-$$
+```math
 \begin{bmatrix}
 T(n) \\ T(n-1) \\ T(n-2) \\
 \end{bmatrix}
@@ -73,9 +73,9 @@ T(n) \\ T(n-1) \\ T(n-2) \\
 \begin{bmatrix}
 T(n-1) \\ T(n-2) \\ T(n-3) \\
 \end{bmatrix}
-$$
+```
 For a 𝑘-step recurrence, the matrix is 𝑘×𝑘
-$$
+```math
 A = 
 \begin{bmatrix}
 c_1 & c_2 & \dots & c_k \\
@@ -84,7 +84,7 @@ c_1 & c_2 & \dots & c_k \\
 \vdots & \vdots & \ddots & \vdots \\
 0 & 0 & \dots & 1
 \end{bmatrix}
-$$
+```
 
 
 3. **Use Matrix Exponentiation**
