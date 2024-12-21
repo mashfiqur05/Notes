@@ -2,12 +2,12 @@
 
 Welcome to Notes repository! Here I covered various topic that I took notes while learning, practicing and exploring.
 
-</br>
-
+<!-- </br> -->
+<!-- 
 # Contents
 -  Database
     - Introduction to Database
-
+ -->
 
 ## Features
 - Clean notes on various topics.
