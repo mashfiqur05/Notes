@@ -41,7 +41,7 @@ bool isPossible(int a, int b, int c)
 }
 ```
 
-### Finding a particular solution
+## Finding a particular solution
 
 Extended Euclidean algorithm can be used for finding a particular solution.
 Assume that a, b is non negative and we can find g = gcd(a, b).
@@ -93,7 +93,7 @@ bool find_any_solution(int a, int b, int c, int &x0, int &y0, int &g) {
 }
 ```
 
-### Getting all Solution
+## Getting all Solution
 After finding one soluion we can devired a general solution for generating all solution.
 ```math
 x = x_0 + \frac{b} {gcd (a, b)} \cdot t
@@ -103,7 +103,7 @@ y = y_0 - \frac{a} {gcd (a, b)} \cdot t
 ```
 where k is a integer
 
-### Finding the number of solution in a given interval
+## Finding the number of solution in a given interval
 
 We understand from the previous part that we can find infinite number of solution. We can find solutions within a specified interval by follwing these steps.
 - Find any solution of the equation.
@@ -163,3 +163,12 @@ int find_all_solutions(int a, int b, int c, int minx, int maxx, int miny, int ma
     return (rx - lx) / abs(b) + 1;
 }
 ```
+
+## Find the solution with minimum value of  x + y
+For handling the sum of x + y we have to adjust k in the formula.
+```math
+x' = x + k \cdot \frac{b}{g}, \quad y' = y - k \cdot \frac{a}{g}
+```
+- If a < b, we select the `smallest k` to minimize `(x + y)` 
+- if a > b, we select the `largest k`.
+- for a = b all the solution have the same sum.
