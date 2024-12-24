@@ -1,7 +1,7 @@
 # Linear Diophantine Equations
 
 A Diophantine Equation is a equation of general form
-```
+```math 
 ax + by = c
 ```
 where a, b, c are given integers and x, y are unknown integers.
